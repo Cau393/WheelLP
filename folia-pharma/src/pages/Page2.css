@@ -1,0 +1,96 @@
+.header-3d {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -120px; 
+  margin-bottom: -250px; 
+  position: relative;
+  z-index: 5;
+  text-align: center;
+}
+
+.header-3d img {
+  width: 500px; 
+  max-width: 95%;
+  height: auto;
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
+}
+
+.wheel-container {
+  position: relative;
+  width: 320px; /* Control the size here */
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.wheel-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  overflow: visible;
+}
+
+.spin-button {
+  padding: 14px 64px;
+  background: linear-gradient(135deg, #0088ff, #0066cc);
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 20px rgba(0, 102, 204, 0.35);
+  position: relative;
+  z-index: 50;
+}
+
+.spin-button:disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.spin-button:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 22px rgba(0, 102, 204, 0.4);
+}
+
+.result-text {
+  color: #0b4b8a;
+  font-size: 18px;
+  margin: 0;
+}
+
+.result-text strong {
+  color: #0088ff;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .header-3d {
+    margin-top: -70px !important;    /* Pull up slightly */
+    margin-bottom: -120px !important;  /* Push the wheel DOWN (Positive value) */
+    width: 100%;
+    height: auto;
+  }
+
+  .header-3d img {
+    /* Make the image smaller on mobile */
+    width: 400px !important;
+    max-width: 80%;
+  }
+
+  /* Optional: Ensure wheel has space */
+  .wheel-container {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
