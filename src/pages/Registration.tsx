@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import {Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import { formatPhoneNumber, normalizeDigitsData } from '../utils/formatters'
 import './Page1.css'
 
@@ -151,24 +152,24 @@ export default function Registration({ onSubmit }: RegistrationProps) {
       <footer className="footer">
         <div className="footer-content">
           <img src="/logo.png" alt="CDPI" className="footer-logo" />
-          <div className="social-icons">
-            <button type="button" className="social-icon" aria-label="Instagram">
-              ig
-            </button>
-            <button type="button" className="social-icon" aria-label="Facebook">
-              f
-            </button>
-            <button type="button" className="social-icon" aria-label="YouTube">
-              yt
-            </button>
-            <button type="button" className="social-icon" aria-label="LinkedIn">
-              in
-            </button>
-          </div>
+          <div className="text-center md:text-right">
+              <div className="flex justify-center md:justify-end space-x-3 mb-4">
+                <a href="https://www.facebook.com/cdpipharma/" target="_blank" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <a href="https://www.instagram.com/cdpipharma/" target="_blank" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
+                  <Instagram className="h-5 w-5" />
+                </a>
+                <a href="https://www.linkedin.com/company/cdpi-pharma/" target="_blank" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
+                  <Linkedin className="h-5 w-5" />
+                </a>
+                <a href="https://www.youtube.com/@cdpimoving" target="_blank" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
+                  <Youtube className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
           <p className="footer-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-            maecenas accumsan lacus vel facilisis.
+            O CDPI PHARMA é uma Instituição de Graduação e Pós-graduação, especializada em treinamentos e consultorias técnicas/científicas, focado em  profissionais e empresas do mercado industrial farmacêutico, sendo a empresa líder nesse segmento.
           </p>
         </div>
       </footer>

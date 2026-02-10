@@ -50,9 +50,7 @@ export default function Reward({ prizeCode, onWhatsAppClick }: Readonly<RewardPr
             </button>
           </div>
           <p className="footer-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-            maecenas accumsan lacus vel facilisis.
+            O CDPI PHARMA é uma Instituição de Graduação e Pós-graduação, especializada em treinamentos e consultorias técnicas/científicas, focado em  profissionais e empresas do mercado industrial farmacêutico, sendo a empresa líder nesse segmento.
           </p>
         </div>
       </footer>
