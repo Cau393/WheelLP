@@ -4,13 +4,10 @@
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-  background-image: 
-    radial-gradient(180% 120% at 50% 0%, transparent 55%, #ffffff 55.1%),
-    url('/bg-pattern.jpg');
-  background-size: 100% 100%, cover;
-  background-position: center, center top;
+  background-image: url('/BG-CARNAVAL2-2.jpg');
+  background-size: cover;
+  background-position: top center;
   background-repeat: no-repeat;
-
   color: #0b4b8a;
 }
 
@@ -134,5 +131,10 @@
   .footer-content {
     justify-content: center;
     text-align: center;
+  }
+
+  .page-container {
+    background-size: 100% auto;
+    background-image: url('/bg-pattern.jpg');
   }
 }
