@@ -120,6 +120,11 @@
   .header {
     padding: 10px 0; 
   }
+
+  .page-container {
+    background-image: url('/bg-pattern.jpg') !important;
+    background-size: 100% auto !important;
+  }
 }
 
 @media (max-width: 640px) {
@@ -137,6 +142,6 @@
 @media (min-width: 641px) {
   .page-container {
     background-image: url('/BG-CARNAVAL2-2.jpg') !important;
-    background-size: cover !important;
+    background-size: 1920px 1080px !important;
   }
 }
