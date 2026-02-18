@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-  background-image: url('/BG-CARNAVAL2-2.jpg');
+  background-image: url('/bg-pattern.jpg');
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -132,9 +132,11 @@
     justify-content: center;
     text-align: center;
   }
+}
 
+@media (min-width: 641px) {
   .page-container {
-    background-size: 100% auto;
-    background-image: url('/bg-pattern.jpg');
+    background-image: url('/BG-CARNAVAL2-2.jpg') !important;
+    background-size: cover !important;
   }
 }
