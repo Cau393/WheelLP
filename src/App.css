@@ -8,6 +8,7 @@
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+  background-attachment: fixed !important;
   color: #0b4b8a;
 }
 
@@ -142,6 +143,8 @@
 @media (min-width: 641px) {
   .page-container {
     background-image: url('/BG-CARNAVAL2-2.jpg') !important;
-    background-size: 1920px 1080px !important;
+    background-size: cover !important;
+    background-position: center top !important;
+    background-attachment: fixed !important;
   }
 }
